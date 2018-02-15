@@ -1,0 +1,104 @@
+﻿<Window x:Class="u1_03_ShipstonComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u1_03_ShipstonComputer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="lblComponent"
+               Content="6th Gen Intel® Core™ i5-6500 Skylake Processor - UP TO 3.2GHZ - BX80662I56500" Margin="0,0,0,266"/>
+        <Image x:Name="imgPicture"
+               Source="http://images.highspeedbackbone.net/skuimages/gallery/large/GNT-103000693_gallery01x_JT_gl_9788450.jpg" Margin="0,32,292,64"/>
+        <Button x:Name="btnMotherboard"
+                Content="Motherboard"
+                Click="btnContinue_Click"
+                Margin="85,282,352,10"/>
+        <Button x:Name="btnGPU"
+                Content="GPU" 
+                Click="btnGPU_Click"
+                Margin="0,282,437,10"
+                Visibility="Visible"/>
+        <Button x:Name="btnRAM"
+                Content="RAM" 
+                Click="btnRAM_Click"
+                Margin="170,282,267,10"/>
+        <Button x:Name="btnCase"
+                Content="Case"
+                Click="btnCase_Click" 
+                Margin="255,282,182,10"/>
+        <Button x:Name="btnPower"
+                Content="Power"
+                Click="btnPower_Click"
+                Margin="340,282,97,10"/>
+        <Button x:Name="btnStorage"
+                Content="Storage"
+                Click="btnStorage_Click" 
+                Margin="425,282,12,10"/>
+        <Button x:Name="btnCost"
+                Content="Total Cost"
+                Click="btnCost_Click" 
+                Margin="0,248,12,42"/>
+        <Button x:Name="btnCpu1"
+                Content="CPU"
+                Click="btnCpu_Click" 
+                Margin="0,282,437,10"
+                Visibility="Hidden"/>
+        <Button x:Name="btnCpu2"
+                Content="CPU"
+                Click="btnCpu2_Click"
+                Margin="85,282,352,10"
+                Visibility="Hidden"/>
+        <Button x:Name="btnCpu3"
+                Content="CPU"
+                Click="btnCpu3_Click"
+                Margin="170,282,267,10"
+                Visibility="Hidden"/>
+        <Button x:Name="btnCpu4"
+                Content="CPU"
+                Click="btnCpu4_Click"
+                Margin="255,282,182,10"
+                Visibility="Hidden"/>
+        <Button x:Name="btnCpu5"
+                Content="CPU"
+                Click="btnCpu5_Click"
+                Margin="340,282,97,10"
+                Visibility="Hidden"/>
+        <Button x:Name="btnCpu6"
+                Content="CPU"
+                Click="btnCpu6_Click"
+                Visibility="Hidden" 
+                Margin="425,282,12,10"/>
+        <TextBox
+            Text="Link to item: https://www.newegg.ca/Product/Product.aspx?Item=N82E16819117563"
+            x:Name="txtLink"
+            HorizontalAlignment="Left" 
+            Height="70" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="299" 
+            Margin="208,53,0,0"/>
+        <TextBox 
+            x:Name="txtPrice"
+            Text="Price: 259.99$"
+            HorizontalAlignment="Left" 
+            Height="37" 
+            Margin="208,123,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="299"/>
+        <TextBox
+            x:Name="txtTotalPrice"
+            FontSize="60"
+            Margin="0,0,0,76"
+            Text="Total Price: 849.43$"
+            Visibility="Hidden"/>
+        <Button
+            x:Name="btnGoBack"
+            Content="Go Back"
+            Click="btnGoBack_Click" 
+            Visibility="Hidden"
+            Margin="0,248,12,10"/>
+    </Grid>
+</Window>
