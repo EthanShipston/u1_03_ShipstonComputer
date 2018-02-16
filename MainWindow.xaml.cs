@@ -31,27 +31,6 @@ namespace u1_03_ShipstonComputer
             InitializeComponent();
         }
 
-        private void btnContinue_Click(object sender, RoutedEventArgs e)
-        {
-            lblComponent.Content = "GIGABYTE GA-B250M-DS3H (rev. 1.0) LGA 1151 Intel B250 HDMI SATA 6Gb/s USB 3.1" + System.Environment.NewLine + "Micro ATX Intel Motherboard";
-            BitmapImage bi = new BitmapImage(new Uri("https://images10.newegg.com/NeweggImage/ProductImageCompressAll1280/13-128-980_R01.jpg"));
-            imgPicture.Source = bi;
-            txtLink.Text = "Link to item: https://www.newegg.com/Product/Product.aspx?Item=N82E16813128980";
-            txtPrice.Text = "Price: 59.99$";
-            btnCpu1.Visibility = Visibility.Hidden;
-            btnCpu2.Visibility = Visibility.Visible;
-            btnCpu3.Visibility = Visibility.Hidden;
-            btnCpu4.Visibility = Visibility.Hidden;
-            btnCpu5.Visibility = Visibility.Hidden;
-            btnCpu6.Visibility = Visibility.Hidden;
-            btnGPU.Visibility = Visibility.Visible;
-            btnMotherboard.Visibility = Visibility.Hidden;
-            btnRAM.Visibility = Visibility.Visible;
-            btnCase.Visibility = Visibility.Visible;
-            btnPower.Visibility = Visibility.Visible;
-            btnStorage.Visibility = Visibility.Visible;
-        }
-
         private void btnGPU_Click(object sender, RoutedEventArgs e)
         {
             lblComponent.Content = "GIGABYTE GeForce GTX 1050 OC Low Profile 2GB Video Card, GBTGV-N1050OC-2GL";
@@ -119,6 +98,22 @@ namespace u1_03_ShipstonComputer
         {
             txtTotalPrice.Visibility = Visibility.Visible;
             btnGoBack.Visibility = Visibility.Visible;
+            btnCpu1.Visibility = Visibility.Hidden;
+            btnCpu2.Visibility = Visibility.Hidden;
+            btnCpu3.Visibility = Visibility.Hidden;
+            btnCpu4.Visibility = Visibility.Hidden;
+            btnCpu5.Visibility = Visibility.Hidden;
+            btnCpu6.Visibility = Visibility.Hidden;
+            btnGPU.Visibility = Visibility.Hidden;
+            btnMotherboard.Visibility = Visibility.Hidden;
+            btnRAM.Visibility = Visibility.Hidden;
+            btnCase.Visibility = Visibility.Hidden;
+            btnPower.Visibility = Visibility.Hidden;
+            btnStorage.Visibility = Visibility.Hidden;
+            txtLink.Visibility = Visibility.Hidden;
+            lblComponent.Visibility = Visibility.Hidden;
+            txtPrice.Visibility = Visibility.Hidden;
+            imgPicture.Visibility = Visibility.Hidden;
         }
 
         private void btnCpu_Click(object sender, RoutedEventArgs e)
@@ -293,6 +288,43 @@ namespace u1_03_ShipstonComputer
         {
             txtTotalPrice.Visibility = Visibility.Hidden;
             btnGoBack.Visibility = Visibility.Hidden;
+            btnCpu1.Visibility = Visibility.Hidden;
+            btnCpu2.Visibility = Visibility.Hidden;
+            btnCpu3.Visibility = Visibility.Hidden;
+            btnCpu4.Visibility = Visibility.Hidden;
+            btnCpu5.Visibility = Visibility.Hidden;
+            btnCpu6.Visibility = Visibility.Hidden;
+            btnGPU.Visibility = Visibility.Visible;
+            btnMotherboard.Visibility = Visibility.Visible;
+            btnRAM.Visibility = Visibility.Visible;
+            btnCase.Visibility = Visibility.Visible;
+            btnPower.Visibility = Visibility.Visible;
+            btnStorage.Visibility = Visibility.Visible;
+            txtLink.Visibility = Visibility.Visible;
+            lblComponent.Visibility = Visibility.Visible;
+            txtPrice.Visibility = Visibility.Visible;
+            imgPicture.Visibility = Visibility.Visible;
+        }
+
+        private void btnMotherboard_Click(object sender, RoutedEventArgs e)
+        {
+            lblComponent.Content = "GIGABYTE GA-B250M-DS3H (rev. 1.0) LGA 1151 Intel B250 HDMI SATA 6Gb/s USB 3.1" + System.Environment.NewLine + "Micro ATX Intel Motherboard";
+            BitmapImage bi = new BitmapImage(new Uri("https://images10.newegg.com/NeweggImage/ProductImageCompressAll1280/13-128-980_R01.jpg"));
+            imgPicture.Source = bi;
+            txtLink.Text = "Link to item: https://www.newegg.com/Product/Product.aspx?Item=N82E16813128980";
+            txtPrice.Text = "Price: 59.99$";
+            btnCpu1.Visibility = Visibility.Hidden;
+            btnCpu2.Visibility = Visibility.Visible;
+            btnCpu3.Visibility = Visibility.Hidden;
+            btnCpu4.Visibility = Visibility.Hidden;
+            btnCpu5.Visibility = Visibility.Hidden;
+            btnCpu6.Visibility = Visibility.Hidden;
+            btnGPU.Visibility = Visibility.Visible;
+            btnMotherboard.Visibility = Visibility.Hidden;
+            btnRAM.Visibility = Visibility.Visible;
+            btnCase.Visibility = Visibility.Visible;
+            btnPower.Visibility = Visibility.Visible;
+            btnStorage.Visibility = Visibility.Visible;
         }
     }
 }

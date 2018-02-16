@@ -13,7 +13,7 @@
                Source="http://images.highspeedbackbone.net/skuimages/gallery/large/GNT-103000693_gallery01x_JT_gl_9788450.jpg" Margin="0,32,292,64"/>
         <Button x:Name="btnMotherboard"
                 Content="Motherboard"
-                Click="btnContinue_Click"
+                Click="btnMotherboard_Click"
                 Margin="85,282,352,10"/>
         <Button x:Name="btnGPU"
                 Content="GPU" 
@@ -70,7 +70,7 @@
                 Click="btnCpu6_Click"
                 Visibility="Hidden" 
                 Margin="425,282,12,10"/>
-        <TextBox
+        <TextBlock
             Text="Link to item: https://www.newegg.ca/Product/Product.aspx?Item=N82E16819117563"
             x:Name="txtLink"
             HorizontalAlignment="Left" 
@@ -79,7 +79,7 @@
             VerticalAlignment="Top" 
             Width="299" 
             Margin="208,53,0,0"/>
-        <TextBox 
+        <TextBlock
             x:Name="txtPrice"
             Text="Price: 259.99$"
             HorizontalAlignment="Left" 
@@ -88,7 +88,7 @@
             TextWrapping="Wrap" 
             VerticalAlignment="Top" 
             Width="299"/>
-        <TextBox
+        <TextBlock
             x:Name="txtTotalPrice"
             FontSize="60"
             Margin="0,0,0,76"
